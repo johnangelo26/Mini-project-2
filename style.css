@@ -21,6 +21,12 @@ main {
     height: 550px;
     width: auto;
 }
+.banner{
+
+    font-weight: bold;
+    font-size: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 h3, h2, h1 {
     font-family: 'Open Sans', Arial, sans-serif;
@@ -31,6 +37,10 @@ h3, h2, h1 {
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
     text-align: center;
+}
+
+.services .card-body i{
+    font-size: 60px;
 }
 
 iframe {
@@ -63,110 +73,14 @@ iframe {
 .custom-shape-divider-bottom-1678789228 .shape-fill {
     fill: #0d6efd;
 }
-.navbar .navbar-form {
-	border: none;
+.learnVA {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), 
+    url('https://www.youthemployment.org.uk/dev/wp-content/uploads/2018/07/achievement-3408115_640-600x287.jpg');
+    background-size: 100%;
+    
+    
 }
-.navbar .action-form {
-	width: 280px;
-	padding: 20px;
-	left: auto;
-	right: 0;
-	font-size: 14px;
-}
-.navbar .action-form a {		
-	color: #33cabb;
-	padding: 0 !important;
-	font-size: 14px;
-}
-.navbar .action-form .hint-text {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 13px;
-}
-.navbar .btn-primary, .navbar .btn-primary:active {
-	color: #fff;
-	background: #33cabb !important;
-	border: none;
-}	
-.navbar .btn-primary:hover, .navbar .btn-primary:focus {		
-	color: #fff;
-	background: #31bfb1 !important;
-}
-.navbar .social-btn .btn, .navbar .social-btn .btn:hover {
-	color: #fff;
-	margin: 0;
-	padding: 0 !important;
-	font-size: 13px;
-	border: none;
-	transition: all 0.4s;
-	text-align: center;
-	line-height: 34px;
-	width: 47%;
-	text-decoration: none;
-}
-.navbar .social-btn .facebook-btn {
-	background: #507cc0;
-}
-.navbar .social-btn .facebook-btn:hover {
-	background: #038cfc;
-}
-.navbar .social-btn .gmail-btn {
-	background: #fa5252;
-}
-.navbar .social-btn .gmail-btn:hover {
-	background: #de1010;
-}
-.navbar .social-btn .btn i {
-	margin-right: 5px;
-	font-size: 16px;
-	position: relative;
-	top: 2px;
-}
-.or-seperator {
-	margin-top: 32px;
-	text-align: center;
-	border-top: 1px solid #e0e0e0;
-}
-.or-seperator b {
-	color: #666;
-	padding: 0 8px;
-	width: 30px;
-	height: 30px;
-	font-size: 13px;
-	text-align: center;
-	line-height: 26px;
-	background: #fff;
-	display: inline-block;
-	border: 1px solid #e0e0e0;
-	border-radius: 50%;
-	position: relative;
-	top: -15px;
-	z-index: 1;
-}
-.navbar .action-buttons .dropdown-toggle::after {
-	display: none;
-}
-.form-check-label input {
-	position: relative;
-	top: 1px;
-}
-@media (min-width: 1200px){
-	.form-inline .input-group {
-		width: 300px;
-		margin-left: 30px;
-	}
-}
-@media (max-width: 768px){
-	.navbar .dropdown-menu.action-form {
-		width: 100%;
-		padding: 10px 15px;
-		background: transparent;
-		border: none;
-	}
-	.navbar .form-inline {
-		display: block;
-	}
-	.navbar .input-group {
-		width: 100%;
-	}
+
+.learnVA .card-body i{
+    font-size: 50px;
 }
