@@ -4,6 +4,7 @@
     <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 <head>
     <title>VA Academy - How to Avail</title>
 </head>
@@ -88,6 +89,12 @@
         padding: 0;
         overflow: hidden;
     }
+    
+    #cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+    }
 
     .custom-shape-divider-bottom-1678789228 {
     bottom: 0;
@@ -118,7 +125,7 @@
 </style>
 <body>
 <!-- Nav Bar -->
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top">
   <div class="container-fluid">
     <a href="VA site.html" class="navbar-brand mb-0 h1">
       <img class="d-inline-block align top"
@@ -126,40 +133,37 @@
         width="30" height="30">
       VA ACADEMY
     </a>
-    <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler ms-5"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto mb-2 lg-0">
-        <li class="nav-item active">
-          <a href="index.html" class="nav-link active">
-            HOME
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link 
-                      dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            WHAT WE OFFER
-          </a>
-          <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-            <li><a href="VA Academy Courses.html" class="dropdown-item">COURSES</a></li>
-            <li><a href="VA Academy Form.html" class="dropdown-item">HOW TO AVAIL</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="Contact.html" class="nav-link">
-            CONTACT US
-          </a>
-        </li>
-      </ul>
-      <ul class="navbar-nav sm-icons">
-        <li><a class="nav-link" href="#"><i class="bi bi-facebook"></i> facebook</a></li>
-        <li><a class="nav-link" href="#"><i class="bi bi-instagram"></i> instagram</a></li>
-        <li><a class="nav-link" href="#"><i class="bi bi-twitter"></i> twitter</a></li>
-        <li><a class="nav-link" href="#"><i class="bi bi-envelope-fill"></i> email</a></li>
-      </ul>
+    <div class="collapse navbar-collapse me-5 pe-5" id="navbarNav">
+      <ul class="navbar-nav mx-auto lg-0">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link active">
+              HOME
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link 
+                        dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              WHAT WE OFFER
+            </a>
+            <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+              <li><a href="VA Academy Courses.html" class="dropdown-item">COURSES</a></li>
+              <li><a href="VA Academy Form.html" class="dropdown-item">HOW TO AVAIL</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="Contact.html" class="nav-link">
+              CONTACT US
+            </a>
+          </li>
+      </u>
+    </div>
+          <!-- Cart-Icon -->
+          <i class='bx bx-shopping-bag' id="cart-icon"></i>
 </nav>
 <!-- End of Nav Bar -->
 
@@ -190,12 +194,7 @@
             </select>
 
             <label>Courses to Avail:</label>
-            <select>
-                <option> </option>
-                <option>3in1 VIRTUAL ASSISTANT COURSES - PHP 350</option>
-                <option>2in1 DIGITAL MARKETING COURSES - PHP 250</option>
-                <option>FULL COURSE - PHP 500</option>
-            </select>
+            <input type="text">
 
             <label>How did you learn about this site?:</label>
             <select style="margin-top: 20px;">
@@ -264,7 +263,12 @@
             </div>
         </div>
         <div class="container text-center">
-        <button type="button" class="btn btn-primary btn-lg p-3 mb-5"><a href="#registration" id="registerButton">REGISTER</a></button>
+        <button type="button" class="btn btn-primary btn-lg p-3 px-3 mb-5" onclick="registerButton()" id="registerButton">REGISTER</button>
+        <script>
+          function registerButton() {
+            alert("You have successfully registered. Please proceed to our facebook page.");
+          }
+        </script>
         </div>
     </div>
 
