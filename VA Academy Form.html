@@ -122,6 +122,26 @@
     }
     }
 
+@media (min-width: 1200px){
+	.form-inline .input-group {
+		width: 300px;
+		margin-left: 30px;
+	}
+}
+@media (max-width: 768px){
+	.navbar .dropdown-menu.action-form {
+		width: 100%;
+		padding: 10px 15px;
+		background: transparent;
+		border: none;
+	}
+	.navbar .form-inline {
+		display: block;
+	}
+	.navbar .input-group {
+		width: 100%;
+	}
+}
 </style>
 <body>
 <!-- Nav Bar -->
@@ -137,6 +157,7 @@
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse me-5 pe-5" id="navbarNav">
       <ul class="navbar-nav mx-auto lg-0">
           <li class="nav-item active">
@@ -164,6 +185,7 @@
     </div>
           <!-- Cart-Icon -->
           <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
 </nav>
 <!-- End of Nav Bar -->
 
