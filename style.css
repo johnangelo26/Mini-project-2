@@ -19,7 +19,7 @@ main {
     background-position: center;
     background-size: cover;
     height: 550px;
-    width: auto;
+    width: 100%;
 }
 .banner{
 
