@@ -7,17 +7,34 @@
   <title>VA Academy</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+<style>
+.custom-shape-divider-bottom-1682407037 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1682407037 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 43px;
+}
+
+.custom-shape-divider-bottom-1682407037 .shape-fill {
+    fill: #FFFFFF;
+}
+</style>
 
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
@@ -28,12 +45,12 @@
           width="30" height="30">
         VA ACADEMY
       </a>
-      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler ms-5"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto mb-2 lg-0">
+      <div class="collapse navbar-collapse mx-5" id="navbarNav">
+        <ul class="navbar-nav mx-auto lg-0">
           <li class="nav-item active">
             <a href="index.html" class="nav-link active">
               HOME
@@ -56,19 +73,14 @@
             </a>
           </li>
         </ul>
-    		<div class="navbar-nav ml-auto action-buttons">
+      </div>
+    		<div class="navbar-nav action-buttons">
           <div class="nav-item dropdown">
-            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle mr-4">Login</a>
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Login</a>
                     <div class="dropdown-menu action-form">
               <form action="/examples/actions/confirmation.php" method="post">
-                <p class="hint-text">Sign in with your social media account</p>
-                <div class="form-group social-btn clearfix">
-                  <a href="#" class="btn btn-secondary facebook-btn float-left"><i class="bi bi-facebook"></i> Facebook</a>
-                  <a href="#" class="btn btn-secondary gmail-btn float-right"><i class="bi bi-google"></i> Gmail</a>
-                </div>
-                <div class="or-seperator"><b>or</b></div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Username" required="required">
+                  <input type="text" class="form-control" placeholder="Email" required="required">
                 </div>
                 <div class="form-group">
                   <input type="password" class="form-control" placeholder="Password" required="required">
@@ -77,16 +89,22 @@
                 <div class="text-center mt-2">
                   <a href="#">Forgot Your password?</a>
                 </div>
+                <div class="or-seperator"><b>or</b></div>
+                <p class="hint-text">Sign in with your social media account</p>
+                <div class="form-group social-btn clearfix">
+                  <a href="#" class="btn btn-secondary facebook-btn float-left"><i class="bi bi-facebook"></i> Facebook</a>
+                  <a href="#" class="btn btn-secondary gmail-btn float-right"><i class="bi bi-google"></i> Gmail</a>
+                </div>
               </form>
                     </div>
           </div>
-          <div class="nav-item dropdown">
+          <div class="nav-item dropdown my-auto">
             <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle sign-up-btn">Sign up</a>
                     <div class="dropdown-menu action-form">
               <form action="/examples/actions/confirmation.php" method="post">
                 <p class="hint-text">Fill in this form to create your account!</p>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Username" required="required">
+                  <input type="text" class="form-control" placeholder="Email" required="required">
                 </div>
                 <div class="form-group">
                   <input type="password" class="form-control" placeholder="Password" required="required">
@@ -107,7 +125,7 @@
   <main>
     
     <!--banner section-->
-    <div class="container pt-5 mt-3">
+  <div class="container pt-5 mt-3">
     <h1 class="banner pt-5">VA ACADEMY</h1>
 
     <h3>Business Owners are hiring Virtual Assistants in record numbers.</h3>
@@ -120,7 +138,15 @@
     <h2><b>CHECK OUR COURSES NOW!</b></h2>
     <button type="button" class="btn btn-warning mb-5"><b><a href="VA Academy Courses.html" class="text-white" style="text-decoration: none;">CLICK HERE</a></b></button>
   </div>
+  <div class="custom-shape-divider-bottom-1682407037">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+    </svg>
+  </div>
 </main>
+
+
+
   <!--about section-->
   <div class="container px-4 text-center pt-3 mt-3">
     <div class="row gx-5">
